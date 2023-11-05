@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dergi Samayoa</title>
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom styles css -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body onload="getYear()">
+    <!-- header design -->
+    <header class="header">
+        <div class="logo">
+            <a href="#home">
+                Dergi Samayoa
+                <img src="" alt="">
+            </a>
+        </div>
+
+        <!-- hamburguer menu -->
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <!-- navbar menu -->
+        <nav class="navbar">
+            <a href="#home" class="active">inicio</a>
+            <a href="#experience">experiencia</a>
+            <a href="#portfolio">portafolio</a>
+            <a href="#services">servicios</a>
+            <a href="#contact">contacto</a>
+        </nav>
+    </header>
+
+    <!-- main design -->
+    <main>
+        <!-- home section design -->
+        <section class="home" id="home">
+            <div class="home__about">
+                <h1 class="home__about-me">Dergi Samayoa</h1>
+                <h3><span>Desarrollador Fullstack</span></h3>
+                <p>Soy <i>Ingeniero en Sistemas Computacionales</i>,
+                <p>amante de la tecnología y apasionado de los datos</p>
+                <div class="social-media">
+                    <a href=""><i class='bx bxl-linkedin'></i></a>
+                    <a href=""><i class='bx bxl-facebook'></i></a>
+                    <a href=""><i class='bx bxl-twitter'></i></a>
+                    <a href=""><i class='bx bxl-instagram'></i></a>
+                </div>
+                <div class="download">
+                    <a href="#" class="button">Descargar CV</a>
+                </div>
+            </div>
+            <div class="home__image">
+                <img src="./assets/images/home.jpg" alt="">
+            </div>
+        </section>
+
+        <!-- experience section design -->
+        <section class="experience" id="experience">
+            <div class="experience__image">
+                <img src="./assets/images/sobre-mi.jpg" alt="foto Dergi Samayoa">
+            </div>
+            <div class="experience__content">
+                <h2 class="experience__content-heading">Sobre <span>mi</span></h2>
+                <h3>Fullstack Developer</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, eligendi cumque cum suscipit
+                    aspernatur odit delectus iure adipisci voluptas at nihil nisi iste. Magni sint nemo assumenda
+                    doloribus. Consectetur, consequatur.
+                </p>
+                <a href="#" class="button">Ver más</a>
+            </div>
+        </section>
+
+        <!-- portfolio section design -->
+        <section class="portfolio" id="portfolio">
+            <h2 class="portfolio__content-heading">Últimos <span>proyectos</span></h2>
+            <div class="portfolio__content">
+                <div class="portfolio__content-card">
+                    <img src="./assets/images/portfolio1-1.png" alt="">
+                    <div class="portfolio__content-card-layer">
+                        <h4>Desarrollo web</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque repellendus, distinctio fuga
+                            quam enim amet quod vero aspernatur
+                        </p>
+                        <a href="https://xochimil.mx" target="_blank">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio__content-card">
+                    <img src="./assets/images/portfolio2-1.png" alt="">
+                    <div class="portfolio__content-card-layer">
+                        <h4>Desarrollo web</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque repellendus, distinctio fuga
+                            quam enim amet quod vero aspernatur
+                        </p>
+                        <a href="https://incloud.mx" target="_blank">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio__content-card">
+                    <img src="./assets/images/portfolio3-1.png" alt="">
+                    <div class="portfolio__content-card-layer">
+                        <h4>Desarrollo web</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque repellendus, distinctio fuga
+                            quam enim amet quod vero aspernatur
+                        </p>
+                        <a href="#">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio__content-card">
+                    <img src="./assets/images/portfolio4-1.png" alt="">
+                    <div class="portfolio__content-card-layer">
+                        <h4>Desarrollo web</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque repellendus, distinctio fuga
+                            quam enim amet quod vero aspernatur
+                        </p>
+                        <a href="https://kuxul.com" target="_blank">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- services section design -->
+        <section class="services" id="services">
+            <h2 class="services__content-heading">Mis <span>servicios</span></h2>
+            <div class="services__content">
+                <div class="services__content-box">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Desarrollo web</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque repellendus, distinctio fuga
+                        quam
+                        enim amet quod vero aspernatur vitae! Eaque similique nam ducimus nesciunt voluptatibus
+                        temporibus distinctio. Asperiores, mollitia cumque?
+                    </p>
+                    <a href="#" class="button">Ver más</a>
+                </div>
+                <div class="services__content-box">
+                    <i class='bx bx-paint'></i>
+                    <h3>Diseño gráfico</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque repellendus, distinctio fuga
+                        quam
+                        enim amet quod vero aspernatur vitae! Eaque similique nam ducimus nesciunt voluptatibus
+                        temporibus distinctio. Asperiores, mollitia cumque?
+                    </p>
+                    <a href="#" class="button">Ver más</a>
+                </div>
+                <div class="services__content-box">
+                    <i class='bx bx-scatter-chart'></i>
+                    <h3>Marketing digital</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque repellendus, distinctio fuga
+                        quam
+                        enim amet quod vero aspernatur vitae! Eaque similique nam ducimus nesciunt voluptatibus
+                        temporibus distinctio. Asperiores, mollitia cumque?
+                    </p>
+                    <a href="#" class="button">Ver más</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact section design -->
+        <section class="contact" id="contact">
+            <div class="contact__content">
+                <h2 class="contact__content-heading">Envíame un <span>mensaje</span></h2>
+                <form action="#">
+                    <div class="contact__content-input">
+                        <div class="full-name">
+                            <label for="fullName">Nombre completo</label>
+                            <input type="text" name="fullName" id="fullName" placeholder="Anota tu nombre completo">
+                        </div>
+                        <div class="email">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Anota tu email">
+                        </div>
+                    </div>
+                    <div class="contact__content-input">
+                        <div class="mobilePhone">
+                            <label for="mobilePhone">Número de celular</label>
+                            <input type="tel" name="mobilePhone" id="mobilePhone"
+                                placeholder="Escribe tu número de celular">
+                        </div>
+                        <div class="emailSubject">
+                            <label for="emailSubject">Título del mensaje</label>
+                            <input type="text" name="emailSubject" id="emailSubject"
+                                placeholder="Anota el tema del mensaje">
+                        </div>
+                    </div>
+                    <div class="contact__content-input">
+                        <label for="message">Mensaje</label>
+                        <textarea name="message" id="message" cols="30" rows="6"
+                            placeholder="Escribe el mensaje que me enviarás"></textarea>
+                    </div>
+                    <input class="button" type="submit" value="Enviar mensaje">
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer design -->
+    <footer>
+        <p>Copyright <span id="copy"></span>&copy; <span id="corazon">Hecho con <img src="./assets/images/heart.png"
+                    alt="corazón" width="20px"> en México</span></p>
+    </footer>
+
+    <!-- custom js -->
+    <script src="./assets/js/scripts.js"></script>
+</body>
+
+</html>
