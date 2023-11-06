@@ -6,7 +6,15 @@ function getYear() {
     dataYear.textContent = year;
 }
 
-/* activar el menú activo con el movimiento del scroll */
+/* actividad con el menú hamburguesa */
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+menuIcon.onclick = function () {
+    menuIcon.classList.toggle('bx-window-close');
+    navbar.classList.toggle('active');
+}
+
+/* cambiar el menú activo con el movimiento del scroll */
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('nav a');
 window.onscroll = function () {
@@ -22,11 +30,12 @@ window.onscroll = function () {
             });
         };
     });
+
+    let header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 150);
+
+    /* para remover el navbar y el close del menú cuando se activa un link */
+    menuIcon.classList.remove('bx-window-close');
+    navbar.classList.remove('active');
 };
 
-
-
-
-console.dir(window);
-
-console.dir(document)
