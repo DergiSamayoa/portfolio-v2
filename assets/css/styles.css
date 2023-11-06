@@ -483,6 +483,10 @@ footer {
         padding: 10rem 3% 2rem;
     }
 
+    .services {
+        padding-bottom: 6rem;
+    }
+
     .footer {
         padding: 2rem 3%;
     }
@@ -551,5 +555,32 @@ footer {
 
     .experience {
         flex-direction: column-reverse;
+    }
+
+    .experience__image img {
+        width: 80%;
+        margin-top: 4rem;
+    }
+
+    .portfolio h2 {
+        margin-bottom: 3rem;
+    }
+
+    .portfolio__content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services h1 {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .portfolio__content {
+        grid-template-columns: 50px 1fr;
+    }
+
+    .portfolio__content .portfolio__content-card {
+        width: 90%;
     }
 }
