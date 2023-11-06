@@ -65,12 +65,12 @@ body {
     /* transition: .4s; */
 }
 
-.navbar a:hover{
+.navbar a:hover {
     color: var(--main-color);
 }
 
 .navbar a.active {
-    border-bottom: 2px solid var(--main-color) ;
+    border-bottom: 2px solid var(--main-color);
 }
 
 #menu-icon {
@@ -381,7 +381,7 @@ main span {
     padding: 1rem;
     font-size: 1.5rem;
     color: var(--text-color);
-    background:#080f1c;
+    background: #080f1c;
     border: var(--main-color) solid 1px;
     /* border-radius: .8rem; */
     margin: .6rem 0;
@@ -443,10 +443,10 @@ main span {
 /* .emailSubject input {
     border: double 4px transparent;
     border-radius: 5px;
-    background-image: linear-gradient(var(--color-start), var(--color-end)), 
+    background-image: linear-gradient(var(--color-start), var(--color-end)),
                       linear-gradient(var(--color-start), var(--color-end));
     background-origin: border-box;
-    background-clip: content-box, border-box; 
+    background-clip: content-box, border-box;
     box-decoration-break: clone;
 } */
 
@@ -467,6 +467,10 @@ footer {
 @media (max-width: 1024px) {
     html {
         font-size: 50%;
+    }
+
+    .section {
+        margin-top: 1rem;
     }
 }
 
@@ -516,6 +520,11 @@ footer {
         align-items: center;
     }
 
+    .home__about {
+        padding-left: 0;
+        width: 80%;
+    }
+
     .home__about h1 {
         font-size: 5rem;
     }
@@ -528,8 +537,19 @@ footer {
         font-size: 2.5rem;
     }
 
-    .home__image {
-        width: 50rem;
+    .home .home__image {
+        display: contents;
+        justify-self: center;
+        align-items: center;
+    }
+
+    .home .home__image img {
+        width: 80%;
         margin-top: 3rem;
+        margin-left: 0rem;
+    }
+
+    .experience {
+        flex-direction: column-reverse;
     }
 }
